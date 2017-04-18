@@ -123,9 +123,22 @@ void game1(void)
                 }
                 if(gMid == cMid)
                 {
-                  cNumber++; //Increment correct number by one(right)  
+                  cNumber++; //Increment correct number by one(middle)  
                 }
                 if(gMid == cRight) 
+                {
+                  cNumber++; //Increment correct number by one(middle)  
+                }
+                
+                if (gRight == cLeft) 
+                {
+                  cNumber++;       //Increment correct number by one(right)  
+                }
+                if(gRight == cMid)
+                {
+                  cNumber++; //Increment correct number by one(right)  
+                }
+                if(gRight == cRight) 
                 {
                   cNumber++; //Increment correct number by one(right)  
                 }
